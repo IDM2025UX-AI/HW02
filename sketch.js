@@ -31,10 +31,7 @@ function draw() {
     let face = faces[0];
     let leftMouth = face.keypoints[61];
     let rightMouth = face.keypoints[291];
-    //let upperMouth = face.keypoints[13];
-    //let lowerMouth = face.keypoints[14];
     let mouthWidth = dist(leftMouth.x, leftMouth.y, rightMouth.x, rightMouth.y);
-    //let mouthHeight = dist(upperMouth.x, upperMouth.y, lowerMouth.x, lowerMouth.y);
 
     if (initialMouthWidth === null) {
       initialMouthWidth = mouthWidth;
